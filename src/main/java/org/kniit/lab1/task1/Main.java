@@ -2,13 +2,13 @@ package org.kniit.lab1.task1;
 
 public class Main {
     public static void main(String[] args) {
-        String line = "";
+        StringBuilder line = new StringBuilder();
         for (int i = 1; i <= 100; i++) {
-            line += i;
+            line.append(i);
             if (i % 10 == 0) {
-                line += ",\n";
+                line.append(",\n");
             } else {
-                line += ",";
+                line.append(",");
             }
         }
         System.out.println(line);

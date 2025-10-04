@@ -17,16 +17,13 @@ public class SimpleURL {
 
 
     private void parseUrl(String url) {
-        if (url.startsWith("https://")) {
-            this.protocol = "https";
-            url = url.substring(8);
-        }
+        String[] url_split = url.split("://");
+        this.protocol = url_split[0];
 
-        int indexSlash = url.indexOf('/');
-        if (indexSlash != -1) {
-            this.host = url.substring(0, indexSlash);
-            this.path = url.substring(indexSlash);
-        }
+        String[] domain = url_split[1].split("/", 2);
+        this.host = domain[0];
+        String[] toPath = domain[1].split("\\?");
+        this.path = toPath[0];
 
         if (url.contains("intParam=")) {
             int start = url.indexOf("intParam=") + 9;
