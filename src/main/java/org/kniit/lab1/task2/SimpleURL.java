@@ -115,8 +115,8 @@ public class SimpleURL {
     @Override
     public String toString() {
         return String.format("protocol = %s\nhost = %s\npath = %s\n" +
-                "intParam = %s\ndoubleParam = %s\ntextParameter = %s", "param", "host", "path",
-                intParam, doubleParam, "textParameter");
+                        "intParam = %s\ndoubleParam = %s\ntextParameter = %s", protocol, host, path,
+                intParam, doubleParam, textParameter);
     }
 }
 
