@@ -64,18 +64,6 @@ public abstract class Player {
         return hp;
     }
 
-    public int getFullHp() {
-        return fullHp;
-    }
-
-    public int getX() {
-        return x;
-    }
-
-    public int getY() {
-        return y;
-    }
-
     public int getDamage() {
         return damage;
     }
