@@ -24,7 +24,6 @@ public abstract class Player {
     public void increaseHp(int value) {
         if (!flagLife) {
             System.out.println("Персонаж уже мертв, мы не можем увеличить ему здоровье");
-            return;
         } else {
             int tmp = hp;
             hp = Math.min(value + hp, fullHp);
@@ -36,7 +35,6 @@ public abstract class Player {
     public void reduceHp(int value) {
         if (!flagLife) {
             System.out.println("Персонаж мертв, уменьшать здоровье ему не к чему");
-            return;
         } else {
             int curDamge = Math.max(0, value - defense);
             hp -= curDamge;
