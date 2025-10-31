@@ -20,7 +20,7 @@ public class Priest extends Player implements Heallers {
         player.increaseHp(15);
         this.manaPriest -= 20;
 
-        if (manaPriest < 15) {
+        if (manaPriest < 20) {
             System.out.println("Нужно восстановиться!");
         }
     }
