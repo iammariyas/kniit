@@ -5,15 +5,15 @@ public class Main {
         Container container = new Container(1000);
         Sphere sphere = new Sphere(5);
         Cube cube = new Cube(3);
-        Cone cone = new Cone(5, 10);
+        Cilindre cilindre = new Cilindre(2, 2);
         container.add(sphere);
         container.add(cube);
-        container.add(cone);
+        container.add(cilindre);
         System.out.println(container.getVolume());
 
         System.out.println("\n----------------------");
         System.out.println("Проверка");
         System.out.println(1000 - ((4.0 / 3.0 * Math.PI * Math.pow(5, 3))
-                + Math.pow(3, 3) + 1.0 / 3.0 * Math.PI * Math.pow(5, 2) * 10));
+                + (Math.PI * Math.pow(2, 2) * 2) + Math.pow(3, 3)));
     }
 }
