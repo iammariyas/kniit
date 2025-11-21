@@ -15,10 +15,12 @@ public class ShopItem {
 
     @Override
     public String toString() {
-        return String.format("---Товарная позиция---\n" +
-                "Название: %s\n" +
-                "Количество: %s\n" +
-                "Цена: %.2f\n", name, count, price);
+        return String.format("""
+                ---Товарная позиция---
+                Название: %s
+                Количество: %s
+                Цена: %.2f
+                """, name, count, price);
     }
 
     @Override
