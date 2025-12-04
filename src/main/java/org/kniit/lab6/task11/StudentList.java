@@ -24,7 +24,6 @@ public class StudentList {
     private void addStudent() {
         System.out.println("Введите ФИО студента: ");
         String name = scanner.nextLine().trim();
-
         Student student = new Student(name);
         if (students.contains(student)) {
             System.out.println("Такой студент уже есть");
@@ -99,7 +98,7 @@ public class StudentList {
                 case 5 -> findRange();
                 case 6 -> {
                     System.out.println("До встречи!");
-                    break;
+                    return;
                 }
                 default -> System.out.println("Попробуйте снова.");
             }
