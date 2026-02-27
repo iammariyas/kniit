@@ -9,8 +9,6 @@ public class Main {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println("База данных успешно инициализирована!");
-        System.out.println("======================");
         showHelp();
 
         while (true) {
